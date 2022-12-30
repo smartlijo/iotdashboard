@@ -27,12 +27,3 @@ spec:
       securityContext:
         runAsUser: 1883
         runAsGroup: 1883
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-              - key: app
-                operator: In
-                values: [mosquitto]
-            topologyKey: kubernetes.io/hostname

@@ -16,6 +16,7 @@ metadata:
   labels:
     app: grafana
   name: grafana
+  namespace: monitoring
 spec:
   selector:
     matchLabels:
@@ -74,9 +75,8 @@ metadata:
 spec:
   ports:
     - port: 3000
-      protocol: TCP
-      targetPort: http-grafana
+      nodePort: 31000
   selector:
     app: grafana
   sessionAffinity: None
-  type: LoadBalancer
+  type: NodePort

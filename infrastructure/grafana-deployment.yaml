@@ -31,6 +31,9 @@ spec:
         - secretRef:
             name: grafana-creds
         image: grafana/grafana:9.1.0
+        env:
+         - name: GF_PANELS_DISABLE_SANITIZE_HTML
+           value: "TRUE"
         imagePullPolicy: IfNotPresent
         name: grafana
         resources: {}
