@@ -1,6 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "iotdb-influxdb2-0"
+  namespace: "monitoring"
 image:
   repository: influxdb
-  tag: 2.3.0-alpine
+  tag: 2.6-alpine
   pullPolicy: IfNotPresent
   ## If specified, use these secrets to access the images
   # pullSecrets:
