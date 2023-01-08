@@ -1,3 +1,3 @@
 #!/bin/bash
-microk8s.kubectl apply -f mosquitto-deployment.yaml
-microk8s.kubectl apply -f mosquitto-service.yaml
+kubectl apply -f ./mosquitto/mosquitto-deployment.yaml
+kubectl apply -f ./mosquitto/mosquitto-service.yaml
