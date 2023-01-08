@@ -139,14 +139,14 @@ config:
   outputs:
     - influxdb_v2:
         urls:
-          - "http://10.152.183.96"
+          - "http://iotdb-influxdb2.monitoring.svc.cluster.local"
         bucket: "default"
-        token: "rb7NnxSTxfGkfBo1aQnJL33c8uN3C0nn"
+        token: "ee720562-8f9a-11ed-8e92-3b1aaad969c0"
         organization: "influxdata"
   inputs:
     - mqtt_consumer:
         servers:
-          - "tcp://10.152.183.213:1883"
+          - "tcp://mosquitto.monitoring.svc.cluster.local:1883"
         qos: 0
         topics:
           - "edgex-events"

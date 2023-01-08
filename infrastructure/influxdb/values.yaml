@@ -106,7 +106,7 @@ adminUser:
   ## Leave empty to generate a random password and token.
   ## Or fill any of these values to use fixed values.
   password: ""
-  token: ""
+  token: "ee720562-8f9a-11ed-8e92-3b1aaad969c0"
 
   ## The password and token are obtained from an existing secret. The expected
   ## keys are `admin-password` and `admin-token`.
