@@ -32,6 +32,9 @@ spec:
         supplementalGroups:
           - 0
       containers:
+      - env:
+        - name: GF_PANELS_DISABLE_SANITIZE_HTML
+          value: "true"
         - name: grafana
           image: grafana/grafana:9.1.0
           imagePullPolicy: IfNotPresent
